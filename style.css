@@ -2,19 +2,26 @@ body {
     background-color: rgb(240, 188, 100);
 }
 
+
 .container {
-    
     display: inline-flex;
-    flex-wrap: wrap;
     min-width: 20%;
     height: fit-content;
     min-height: 15%;
-    max-width: 27%;
+    max-width:28%;
     padding: 1%;
     border:2px black solid;
     background-color: rgb(228, 211, 211);
     margin: 1%;
-    
+}
+
+@media (max-width:745px){
+    .container{
+        display: block;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin:3%;
+    }
 }
 
 .formulario {

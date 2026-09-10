@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Mais Acesso Blog</title>
 </head>
 <body >
     <h1 class="text1">Mais Acesso Blog</h1>
 <div class="formulario" >
-    <form >
-        
-    <label ><h3>Adicione algo:</h3> <textarea></textarea></label>
+    <form>
+    <label ><h3>Adicione algo:</h3> <textarea id="novoBlog" ></textarea></label>
     <br>
-    <label><input type="button" id="novoBlog" value="enviar" ></label>
+    <label><button type="button" value="submit" onclick="{criar()}" >Enviar</button></label>
 
 </form>
 </div>
 
-
-<div class="bigger">
-    <div>
+    
 <div class="container">
-       <div class="content">
-        
+
             <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. kjbasiczbd  Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-       </div>
         
     </div>
     <div class="container">
-       <div class="content">
         
             <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-        </div>
         
     </div>
     <div class="container">
-       <div class="content">
+            <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
+        
        
-            <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-        
-        </div>
     </div>
    <div class="container">
-      <div class="content">
+     
             <p3 >Lorem ipsum dolor sit amet c sflkjdfvxc rfdxcnv fjlndgo erdnsxkjv fdxkc vxfdnx vcxcjedns zxcm fjdvnx kfd xcv  jdnvxjfdszncçdsxvck fdxncjdksnzxcçkmzm,znvcopvk dsxnzkcjdsmnzxfockçwds jfdknv dfjnvxcnedosçaknc edsjn djsnfoc dsj djniejndfnx onsectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-       </div>
+     
         </div>
     
     <div class="container">
-        <div class="content">
+     
         
             <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-        </div>
+        
         
     </div>
     <div class="container">
-       <div class="content">
+       
             <p3 >Lorem ipsum dolor sinsoifcknelidsjkfc ierjd vrejdks xfucjkern dsxa fpeiroçsjdnaxf cljker cdscxizljkm gfct amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?</p3>
-       </div>
+       
         
     </div>
     <div class="container">
-        <div class="content">
-            <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?
-        </p3></div>
         
+            <p3 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repudiandae eaque excepturi deleniti dignissimos! Nobis magnam, sint eveniet, ab non cum adipisci deleniti id ut alias assumenda molestiae vero maxime?
+        </p3>
     </div>
-</div>
-</div>
+
+
+<script>
+    function criar (){
+      const textArea = document.getElementById("novoBlog").value;
+      const newBlog = document.createElement("div")
+      newBlog.className = "container"
+      newBlog.innerHTML = `<p3> ${textArea}  </p3>`
+      document.body.append(newBlog)
+      document.getElementById("novoBlog").value = ""
+    }
+    
+</script>
 </body>
 </html>

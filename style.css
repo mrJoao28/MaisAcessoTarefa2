@@ -7,18 +7,17 @@ body {
 }
 
 .container {
-    display: inline-block;
-    width:  40%;
-    height: 50%;
-    max-width: 200px;
-    min-width:30%;
-    min-height: 200px;
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 20%;
+    height: fit-content;
+    min-height: 15%;
+    max-width: 27%;
+    padding: 1%;
+    border:2px black solid;
     background-color: rgb(228, 211, 211);
     margin: 1%;
+    
 }
 
-
-
-.textBlock {
-  margin: 5%;
-}

@@ -1,0 +1,24 @@
+.formulario{
+    background-color: rgb(164, 132, 84);
+}
+
+body {
+    background-color: rgb(240, 188, 100);
+}
+
+.container {
+    display: inline-block;
+    width:  40%;
+    height: 50%;
+    max-width: 200px;
+    min-width:30%;
+    min-height: 200px;
+    background-color: rgb(228, 211, 211);
+    margin: 1%;
+}
+
+
+
+.textBlock {
+  margin: 5%;
+}

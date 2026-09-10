@@ -15,6 +15,24 @@ body {
     margin: 1%;
 }
 
+
+
+.formulario {
+    display:flex;
+    border: 2px black solid;
+    background-color: rgb(235, 151, 55);
+    width:95.7%;
+    min-height: 30%;
+    padding: 0.3%;
+    margin-left: 1%;
+}
+.formulario textarea {
+    width: 640px;
+    height: 159px;
+    margin: 2%;
+}
+
+
 @media (max-width:745px){
     .container{
         display: block;
@@ -22,15 +40,16 @@ body {
         max-height: fit-content;
         margin:3%;
     }
-}
-
-.formulario {
-    display:flex;
+    .formulario {
+    display:block;
     border: 2px black solid;
     background-color: rgb(235, 151, 55);
-    max-width: 25%;
-    min-height: 30%;
-    padding: 2%;
-
-    
+    width:92%;
+    margin-left: 3%;
+    }
+    .formulario textarea {
+    width: 91%;
+    height: 159px;
+    margin: 2%;
+}
 }
